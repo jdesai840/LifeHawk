@@ -170,7 +170,7 @@
             android:id="@+id/Live"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:text="Go Live"
+            android:text="Stream"
             android:onClick="transition" />
 
     </LinearLayout>
