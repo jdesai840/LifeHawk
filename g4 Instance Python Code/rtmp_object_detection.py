@@ -2,7 +2,7 @@ import cv2 as cv
 import numpy as np
 import subprocess
 
-rtmp = r'rtmp://ec2-44-193-30-69.compute-1.amazonaws.com/live/drone'
+rtmp = r'INSERT RTMP URL HERE'
 cap = cv.VideoCapture(0)
 size = (int(cap.get(cv.CAP_PROP_FRAME_WIDTH)), int(cap.get(cv.CAP_PROP_FRAME_HEIGHT)))
 sizeStr = str(size[0]) + 'x' + str(size[1])
@@ -102,20 +102,3 @@ while cap.isOpened():
 cap.release()
 pipe.terminate()
 
-
-
-
-
-
-# Test code for images
-# img = cv.imread("images/chessy.jpeg")
-# blob = cv.dnn.blobFromImage(img, 1 / 255, (whT, whT), [0, 0, 0], 1, crop=False)
-# net.setInput(blob)
-# layersNames = net.getLayerNames()
-# outputNames = [(layersNames[i[0] - 1]) for i in net.getUnconnectedOutLayers()]
-# outputs = net.forward(outputNames)
-# findObjects(outputs, img)
-#
-# cv.imshow('Image', img)
-#
-# cv.waitKey(0)
