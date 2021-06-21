@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">UXSDKDemo</string>
+    <string name="app_name">LifeHawk</string>
     <string name="action_settings">Settings</string>
     <string name="component_listview_live_stream">Live Stream</string>
     <string name="component_listview_health_information">Device Health Information</string>
