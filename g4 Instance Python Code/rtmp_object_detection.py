@@ -2,6 +2,8 @@ import cv2 as cv
 import numpy as np
 import subprocess
 
+//Used to stream inferenced frames to RTMP server hosted on EC2 instance (you can then view the stream from VLC media player over a Verizon 5G network)
+
 rtmp = r'INSERT RTMP URL HERE'
 cap = cv.VideoCapture(0)
 size = (int(cap.get(cv.CAP_PROP_FRAME_WIDTH)), int(cap.get(cv.CAP_PROP_FRAME_HEIGHT)))
